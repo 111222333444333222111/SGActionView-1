@@ -307,9 +307,7 @@
                                                   images:images];
     [menu triggerSelectedAction:^(NSInteger index){
         [[SGActionView sharedActionView] dismissMenu:menu Animated:YES];
-        NSLog(@"hhhhhhhhhhhhhhhhh%ld",index);
         if (handler) {
-           // NSLog(@"hhhhhhhhhhhhhhhhh");
             handler(index);
         }
     }];
